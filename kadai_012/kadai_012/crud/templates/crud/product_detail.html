@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>商品詳細情報</title>
+</head>
+
+<body>
+    <h1>商品詳細情報</h1>
+    <table border="1">
+        <tr>
+            <th>商品名</th>
+            <td>{{ object.name }}</td>
+        </tr>
+        <tr>
+            <th>価格</th>
+            <td>{{ object.price }} 円</td>
+        </tr>
+        <tr>
+            <th>カテゴリ</th>
+            <td>{{ object.category }}</td>
+        </tr>
+        <tr>
+            <th>商品画像</th>
+            <td><img src="{{ object.image.url }}" style="width:200px;"></td>
+        </tr>
+        <tr>
+            <th>商品詳細の説明</th>
+            <td>{{ object.description }}</td>
+        </tr>
+    </table>
+    <a href="/crud/">戻る</a>
+</body>
+
+</html>
